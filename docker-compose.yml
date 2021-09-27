@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    working_dir: /var/www/html
+    environment:
+      PHP_MEMORY_LIMIT: '128M'
+      PHP_IDE_CONFIG: 'serverName=myapp.url'
+    ports:
+      - '80:80'
+    volumes:
+      - ./user:/var/www/html/user:delegated
+      - ./tools:/var/www/html/tools:delegated
+      - ./.docker/xdebug-local.ini:/usr/local/etc/php/conf.d/xdebug-local.ini
