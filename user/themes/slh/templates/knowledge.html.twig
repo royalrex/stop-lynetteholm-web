@@ -1,0 +1,18 @@
+{% extends 'partials/base.html.twig' %}
+{% set collection = page.collection() %}
+
+{% block body %}
+  <section id="body">
+    <div class="container mx-auto bg-white p-5 rounded-b">
+
+      {% block content %}
+        <div class="prose max-w-none">{{ page.content|raw }}</div>
+
+        {% for child in collection %}
+          {{ child.date|date("Y") }}
+          {% include 'partials/knowledge-item.html.twig' with {page: child} %}
+        {% endfor %}
+      {% endblock %}
+    </div>
+  </section>
+{% endblock %}

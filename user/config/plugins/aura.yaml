@@ -1,0 +1,21 @@
+enabled: false
+output-sd: true
+output-og: true
+output-twitter: true
+output-linkedin: true
+org-name: 'STOP Lynetteholm!'
+org-url: 'https://stoplynetteholm.dk'
+org-facebook-url: 'https://www.facebook.com/NytFraStopLynetteholm'
+org-facebook-appid: null
+org-twitter-user: 'https://www.twitter.com/StopLynetteholm'
+org-instagram-url: 'https://www.instagram.com/StopLynetteholm'
+org-linkedin-url: null
+org-pinterest-url: null
+org-youtube-url: null
+org-wikipedia-url: null
+org-logo:
+  user/images/profile.png:
+    name: profile.png
+    type: image/png
+    size: 16916
+    path: user/images/profile.png

@@ -1,0 +1,13 @@
+<section class="w-full relative h-" {% if hero_image %}style="background-image: url('{{ hero_image.url }}');"{% endif %}>
+  <div class="absolute inset-0">
+    <img class="h-full w-full object-cover" src="{{ hero_image.url }}" alt="Lynetteholm">
+  </div>
+  <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+    <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-8xl">
+      <span class="block text-white font-semibold" style="text-shadow: 0 0 15px black;">{{ page.header.title|e }}</span>
+    </h1>
+    <div class="mt-6 max-w-lg mx-auto text-center text-xl text-white sm:max-w-3xl" style="text-shadow: 0 0 5px black;">
+      {{ content|raw }}
+    </div>
+  </div>
+</section>

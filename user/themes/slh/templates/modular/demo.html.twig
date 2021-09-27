@@ -1,0 +1,37 @@
+<div class="mb-8 flex flex-col sm:flex-row items-start justify-between">
+  {% if page.header.icon_left %}
+    <div class="flex-initial w-1/5 pr-4">
+      <img src="{{ page.media[page.header.icon_left].url|e }}" class="m-0"/>
+    </div>
+  {% endif %}
+
+  {% if page.header.icon %}
+    <div>
+      <div class="flex flex-row items-center">
+        <div class="flex-initial">
+          <img src="{{ page.media[page.header.icon].url|e }}"  class="w-14 h-14 m-0 mr-4"/>
+        </div>
+        <h2 class="flex-grow text-2xl font-bold">
+          {{ page.header.title|e }}
+        </h2>
+      </div>
+      <div class="flex-1 prose max-w-none ml-20">
+        {{ content|raw }}
+      </div>
+    </div>
+  {% else %}
+  <div class="flex flex-col">
+    <h2 class="flex-initial text-1xl md:text-2xl font-bold bg-red-600 text-white -mx-6 px-6 py-3 mb-4">
+      {{ page.header.title|e }}
+    </h2>
+    <div class="flex-1 prose max-w-none">
+      {{ content|raw }}
+    </div>
+    </div>
+  {% endif %}
+  {% if page.header.icon_right %}
+    <div class="flex-initial w-1/5 pl-4">
+      <img src="{{ page.media[page.header.icon_right].url|e }}" class="m-0"/>
+    </div>
+  {% endif %}
+</div>

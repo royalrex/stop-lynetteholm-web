@@ -1,0 +1,23 @@
+<div class="mt-6">
+  <strong>{% if page.header.source_media %}{{ page.header.source_media }}: {% endif %}{{ page.title }}</strong>
+  <div class="">
+    <div class="text-sm">
+      <span class="text-gray-600">
+      <a href="{{ page.header.source_link }}" target="_blank">{{ page.header.source_link }}</a></span><br>
+      <span class=" text-gray-400">
+      Udgivet:
+      <time datetime="{{ page.date|date("c") }}">
+        {{ page.date|date("Y-m-d H:i:s") }}
+      </time>
+      </span>
+    </div>
+  </div>
+  <div class="prose max-w-none">
+    {% if page.summary != page.content %}
+      {{ page.summary|raw }}
+    {% else %}
+      {{ page.content|raw }}
+    {% endif %}
+  </div>
+</div>
+

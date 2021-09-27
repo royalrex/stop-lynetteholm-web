@@ -1,0 +1,19 @@
+title: 'STOP Lynetteholm!'
+default_lang: da
+author:
+  name: 'Byen for Borgerne'
+  email: kontakt@byenforborgerne.dk
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: '80-100 mia. kr? 80 mio tons jord? 4.820.000 lastbiler igennem København? NEJ TAK!'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects: null
+routes: null
+blog:
+  route: /blog

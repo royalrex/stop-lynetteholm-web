@@ -1,0 +1,52 @@
+@tailwind base;
+
+/** purgecss start ignore **/
+body {
+  @apply bg-gray-100 min-h-full;
+}
+
+.slh-max-200px {
+  max-width: 200px;
+}
+
+.slh-pl-4 {
+  @apply pl-4;
+}
+
+.slh-citation-reference {
+  @apply -mt-6 text-sm text-right relative;
+}
+
+/** purgecss end ignore **/
+
+@tailwind components;
+
+/** purgecss start ignore **/
+
+.prose {
+  blockquote {
+    @apply font-semibold text-lg;
+    color: #080456;
+  }
+
+  img {
+    margin: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #080456;
+}
+
+img.right {
+  float: right;
+}
+
+.button,
+.prose .button {
+  @apply px-5 py-3 border border-transparent no-underline text-base font-bold rounded-md text-white bg-brand hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+}
+
+/** purgecss end ignore **/
+
+@tailwind utilities;

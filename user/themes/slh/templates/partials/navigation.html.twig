@@ -1,0 +1,121 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="relative bg-white" x-data="{ open: false }" @keydown.escape="onEscape">
+  <div class="flex justify-between items-center px-4 py-3 sm:px-6 md:justify-start md:space-x-10">
+    <div>
+      <a href="/" class="flex">
+        <span class="sr-only">STOP Lynetteholm!</span>
+        <img class="h-8 w-auto sm:h-16" src="/user/themes/slh/images/stop-lynetteholm.svg"
+             alt="STOP Lynetteholm!">
+      </a>
+    </div>
+    <div class="-mr-2 -my-2 md:hidden">
+      <button type="button" @click="open = true" aria-expanded="false"
+              :aria-expanded="open.toString()"
+              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+      >
+        <span class="sr-only">Open menu</span>
+        <!-- Heroicon name: outline/menu -->
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
+      <nav class="flex space-x-10">
+
+        {% for page in pages.children.visible %}
+          {% set current_page = (page.active or page.activeChild) ? 'text-gray-900' : 'text-gray-500' %}
+          <a href="{{ page.url|e }}"
+             class="text-lg font-semibold hover:text-gray-900 {{ current_page|e }}">
+            {{ page.menu|e }}
+          </a>
+        {% endfor %}
+
+        {% for mitem in site.menu %}
+          <a href="{{ mitem.url|e }}" class="text-lg font-semibold text-gray-500 hover:text-gray-900">
+            {{ mitem.text|e }}
+          </a>
+        {% endfor %}
+
+      </nav>
+      {% if false %}
+        <div class="flex items-center md:ml-12">
+          <a href="/bliv-medlem"
+             class="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand uppercase font-semibold">
+            Bliv medlem
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!--
+    Mobile menu, show/hide based on mobile menu state.
+
+    Entering: "duration-200 ease-out"
+      From: "opacity-0 scale-95"
+      To: "opacity-100 scale-100"
+    Leaving: "duration-100 ease-in"
+      From: "opacity-100 scale-100"
+      To: "opacity-0 scale-95"
+  -->
+  <div x-show="open" x-transition:enter="duration-200 ease-out" x-transition:enter-start="opacity-0 scale-95"
+       x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in"
+       x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
+       x-description="Mobile menu, show/hide based on mobile menu state."
+       class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+       @click.away="open = false">
+    <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+      <div class="pt-5 pb-6 px-5">
+        <div class="flex items-center justify-between">
+          <div>
+            <img class="h-8 w-auto" src="/user/themes/slh/images/stop-lynetteholm.svg"
+                 alt="STOP Lynetteholm!">
+          </div>
+          <div class="-mr-2">
+            <button type="button"
+                    @click="open = false"
+                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <span class="sr-only">Close menu</span>
+              <!-- Heroicon name: outline/x -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                   stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="py-6 px-5">
+        <div class="grid grid-cols-2 gap-4">
+
+          {% for page in pages.children.visible %}
+            {% set current_page = (page.active or page.activeChild) ? 'text-gray-900' : 'text-gray-500' %}
+            <a href="{{ page.url|e }}"
+               class="text-base font-medium {{ current_page|e }}">
+              {{ page.menu|e }}
+            </a>
+          {% endfor %}
+
+          {% for mitem in site.menu %}
+            <a href="{{ mitem.url|e }}" class="text-base font-medium text-gray-900 hover:text-gray-500">
+              {{ mitem.text|e }}
+            </a>
+          {% endfor %}
+
+        </div>
+        {% if false %}
+          <div class="mt-6">
+            <a href="/bliv-medlem"
+               class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+              Bliv medlem
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,35 @@
+enabled: true
+seo:
+  robots: without
+  length: 20
+  taxonomy:
+    enabled: true
+  page_content:
+    enabled: false
+  keywords:
+    taxonomy:
+      enabled: true
+    page_content:
+      enabled: false
+    length: 20
+quote:
+  convert_simple: true
+social_pages:
+  pages:
+    twitter:
+      enabled: true
+      type: summary
+      username: stoplynetteholm
+    facebook:
+      opengraph:
+        enabled: true
+      insights:
+        enabled: false
+        appid: '1234567890'
+default:
+  image:
+    user/assets/images/XlU1CdaY5vGfonz.jpg:
+      name: XlU1CdaY5vGfonz.jpg
+      type: image/jpeg
+      size: 201887
+      path: user/assets/images/XlU1CdaY5vGfonz.jpg

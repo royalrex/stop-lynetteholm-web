@@ -1,0 +1,11 @@
+state: enabled
+email: kontakt@byenforborgerne.dk
+fullname: Admin
+title: Administrator
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$Fb8b17o1jAwxqxJBSPE/tuRe7OUpECxn1h0l5vkOgSRgaJ/xb4oAm

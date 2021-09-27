@@ -1,0 +1,11 @@
+state: enabled
+email: info@sdf.dk
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: Admin
+title: null
+hashed_password: $2y$10$Fb8b17o1jAwxqxJBSPE/tuRe7OUpECxn1h0l5vkOgSRgaJ/xb4oAm

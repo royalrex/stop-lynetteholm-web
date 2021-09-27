@@ -1,0 +1,27 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block body %}
+  <section id="body">
+
+    {% block hero %}
+      {% for module in page.collection() if module.template == 'modular/hero' %}
+        {{ module.content|raw }}
+      {% endfor %}
+    {% endblock %}
+
+    <div class="container mx-auto mt-8  p-6 bg-white sm:rounded-2xl">
+
+      {% block content %}
+        {% for module in page.collection() if module.template != 'modular/hero' %}
+          {% if module.header.group != true and loop.first != true %}
+            </div>
+            <div class="container mx-auto mt-8  p-6 bg-white sm:rounded-2xl">
+          {% endif %}
+        {{ module.content|raw }}
+
+        {% endfor %}
+      {% endblock %}
+
+    </div>
+  </section>
+{% endblock %}
