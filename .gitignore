@@ -17,8 +17,19 @@ logs/*
 !logs/.*
 images/*
 !images/.*
+user/accounts/*
+!user/accounts/.*
+user/data/*
+!user/data/.*
+user/plugins/*
+!user/plugins/.*
+user/themes/*
+!user/themes/.*
+!user/themes/slh/*
+user/themes/slh/node_modules/*
 user/localhost/config/security.yaml
 user/config/security.yaml
+tools/*
 
 # OS Generated
 .DS_Store*
