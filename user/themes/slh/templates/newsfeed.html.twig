@@ -9,7 +9,8 @@
         <div class="prose max-w-none">{{ page.content|raw }}</div>
 
         {% for child in collection %}
-          {% include 'partials/knowledge-item.html.twig' with {page: child} %}
+          {% include 'partials/newsfeed-item.html.twig' with {page: child} %}
+          <div class="w-100 bg-brand my-16" style="height: 2px"></div>
         {% endfor %}
       {% endblock %}
     </div>

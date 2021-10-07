@@ -23,19 +23,23 @@ body {
 
 /** purgecss start ignore **/
 
-.prose {
+.prose.blockquotes-lg {
   blockquote {
-    @apply font-semibold text-lg;
-    color: #080456;
-  }
-
-  img {
-    margin: 0;
+    @apply font-semibold text-lg text-brand;
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #080456;
+h1 {
+  @apply text-brand;
+
+  font-weight: 800;
+  font-size: 2.25em;
+  margin-top: 0;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+h2, h3, h4, h5, h6 {
+  @apply text-brand;
 }
 
 img.right {
@@ -45,6 +49,12 @@ img.right {
 .button,
 .prose .button {
   @apply px-5 py-3 border border-transparent no-underline text-base font-bold rounded-md text-white bg-brand hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+}
+
+.press-logo-list {
+  a {
+    @apply inline-block w-auto mr-8
+  }
 }
 
 /** purgecss end ignore **/

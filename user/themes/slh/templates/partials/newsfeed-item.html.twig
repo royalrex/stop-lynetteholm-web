@@ -1,0 +1,17 @@
+<div class="mt-6">
+  <a href="{{ page.url }}" class="font-bold text-lg">{{ page.title }}</a>
+  <div class="">
+    <div class="text-sm">
+      <span class="text-gray-400">
+      Udgivet:
+      <time datetime="{{ page.date|date("c") }}">
+        {{ page.date|date("Y-m-d H:i:s") }}
+      </time>
+      </span>
+    </div>
+  </div>
+  <div class="prose max-w-none">
+      {{ page.content|raw }}
+  </div>
+</div>
+

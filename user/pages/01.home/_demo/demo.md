@@ -1,7 +1,7 @@
 ---
 title: 'Demonstration - 1. juli 2021'
 visible: false
-published: true
+published: false
 ---
 
 ### BEFRI KØBENHAVN. STOP LYNETTEHOLM.

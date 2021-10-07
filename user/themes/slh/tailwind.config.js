@@ -14,6 +14,9 @@ module.exports = {
             h1: {
               color: '#080456',
             },
+            blockquote: {
+              fontWeight: '500',
+            }
           },
         },
       },
