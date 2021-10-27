@@ -1,7 +1,5 @@
 ---
 title: 'Borgernes rettigheder er truet - sæt Lynetteholm på pause nu!'
-summary: 'Det er en demokratisk skandale, at borgere, NGO’er og andre afskæres fra at kunne påvirke det største anlægsprojekt i
-Danmarkshistorien, etableringen af den kunstige ø Lynetteholm.'
 date: '2021-10-01 12:00' 
 published: true 
 visible: true 
