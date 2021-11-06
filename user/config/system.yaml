@@ -45,7 +45,7 @@ pages:
     markdown: true
     twig: false
   twig_first: false
-  never_cache_twig: false
+  never_cache_twig: true
   events:
     page: true
     twig: true
@@ -120,7 +120,7 @@ cache:
     server: null
     port: null
 twig:
-  cache: true
+  cache: false
   debug: true
   auto_reload: true
   autoescape: true
