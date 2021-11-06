@@ -3,15 +3,17 @@
 
 {% block body %}
   <section id="body">
-    <div class="container mx-auto bg-white p-5 rounded-b">
+    <div class="container mx-auto">
 
       {% block content %}
-        <div class="prose max-w-none">{{ page.content|raw }}</div>
-
-        {% for child in collection %}
-          {% include 'partials/newsfeed-item.html.twig' with {page: child} %}
-          <div class="w-100 bg-brand my-16" style="height: 2px"></div>
-        {% endfor %}
+        <div class="prose max-w-none bg-white p-5 rounded-b">{{ page.content|raw }}</div>
+        <div class="p-5">
+          {% for child in collection %}
+            <div class="bg-white p-5 rounded mb-8">
+            {% include 'partials/newsfeed-item.html.twig' with {page: child} %}
+            </div>
+          {% endfor %}
+        </div>
       {% endblock %}
     </div>
   </section>

@@ -1,17 +1,18 @@
-<div class="mt-6">
+<div>
   <a href="{{ page.url }}" class="font-bold text-lg">{{ page.title }}</a>
-  <div class="">
+  <div class="mb-4">
     <div class="text-sm">
       <span class="text-gray-400">
       Udgivet:
       <time datetime="{{ page.date|date("c") }}">
-        {{ page.date|date("Y-m-d H:i:s") }}
+        {{ page.date|date("Y-m-d") }} kl. {{ page.date|date("H:i") }}
       </time>
       </span>
     </div>
   </div>
-  <div class="prose max-w-none">
-      {{ page.content|raw }}
-  </div>
+  <a href="{{ page.url }}" class="block prose max-w-none">
+      {{ page.summary|raw }}
+  </a>
+  <a href="{{ page.url }}" class="underline text-brand">Læs mere</a>
 </div>
 

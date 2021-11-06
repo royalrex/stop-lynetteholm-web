@@ -16,6 +16,10 @@ module.exports = {
             },
             blockquote: {
               fontWeight: '500',
+            },
+            h2: {
+              fontSize: '1.2em',
+              marginBottom: '0.3em',
             }
           },
         },

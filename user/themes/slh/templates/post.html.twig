@@ -1,0 +1,20 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block body %}
+  <section id="body">
+    <div class="container mx-auto bg-white p-5 rounded-b">
+      <h1 class="m-0"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+      <span class=" text-gray-400">
+      Udgivet:
+      <time datetime="{{ page.date|date("c") }}">
+        {{ page.date|date("Y-m-d H:i") }}
+      </time>
+      </span>
+      <br>
+      <span class=" text-gray-400">
+      Af: {{ page.header.author }}
+      </span>
+      <div class="prose max-w-none mt-8">{{ page.content|raw }}</div>
+    </div>
+  </section>
+{% endblock %}
