@@ -2,19 +2,25 @@
 
 {% block body %}
   <section id="body">
-    <div class="container mx-auto bg-white p-5 rounded-b">
-      <h1 class="m-0"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-      <span class=" text-gray-400">
+    <div class="container mx-auto rounded-b">
+      {% if page.header.post_image %}
+      <img class="object-cover object-center w-full h-48"
+           src="{{ page.media[page.header.post_image].url }}" alt="blog">
+      {% endif %}
+      <div class="bg-white p-5">
+        <h1 class="m-0"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+        <span class=" text-gray-400">
       Udgivet:
       <time datetime="{{ page.date|date("c") }}">
         {{ page.date|date("Y-m-d H:i") }}
       </time>
       </span>
-      <br>
-      <span class=" text-gray-400">
+        <br>
+        <span class=" text-gray-400">
       Af: {{ page.header.author }}
       </span>
-      <div class="prose max-w-none mt-8">{{ page.content|raw }}</div>
+        <div class="prose max-w-none mt-8">{{ page.content|raw }}</div>
+      </div>
     </div>
   </section>
 {% endblock %}
