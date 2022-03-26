@@ -26,6 +26,7 @@ module.exports = {
       },
       colors: {
         brand: '#080456',
+        brandHover: '#3566a5',
       },
       zIndex: {
         'overlay': '100'
