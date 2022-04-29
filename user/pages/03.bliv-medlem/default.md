@@ -1,6 +1,6 @@
 ---
 title: 'Bliv medlem'
-visible: false
+visible: true
 ---
 
 # Bliv medlem

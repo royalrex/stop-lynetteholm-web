@@ -105,6 +105,9 @@ Danmarks Naturfredningsforening
 Dansk Sejlunion, NOAH, Rådet for Bæredygtig Trafik,  
 Dansk Ornitologisk Forening, Foreningen Stop Lynetteholm
 
+Der er intet deltagergebyr til konferencen som gennemføres med støtte fra:  
+Danmarks Naturfredningsforening, Foreningen Stop Lynetteholm og Wave Foundation
+
 <div class="press-logo-list" markdown="1">
 [![Danmarks Naturfredningsforening](dn.png?sizes=150w&width=150)](https://www.dn.dk/)
 [![Dansk Sejlunion](dansk-sejlunion.png?sizes=150w&width=150)](https://dansksejlunion.dk/)
