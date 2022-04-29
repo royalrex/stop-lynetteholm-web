@@ -1,5 +1,7 @@
 ---
 title: Det kan du gøre her og nu
+visible: false
+published: false
 ---
 
 ### Støt borgerforslag
