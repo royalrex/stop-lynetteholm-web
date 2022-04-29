@@ -21,10 +21,12 @@ Foreningen blev dannet på en stiftende generalforsamling søndag den 24. april 
 
 Foreningen er en tænketank og en platform for aktiviteter, der skal være modvægt til den magtkoncentration, der bl.a. er samlet i By & Havn med tilhørende netværk. Hvor kredsen omkring Lynetteholm satser på lukkede processer, insisterer vi på åbenhed og på at bringe den faglige kritik af projektet frem i offentligheden.
 
-”- Med den ny forening bringer vi kampen for et bæredygtigt København til et nyt positivt niveau. Vi er imod Lynetteholm, fordi vi er FOR demokrati og borgerinddragelse og transparens i de politiske beslutningsprocesser om byens udvikling og dens natur og miljø”, siger Kim Hjerrild, der er talsperson, når foreningen bliver lanceret på konferencen Fremtidens Øresund, som afholdes på Christiansborg den 30. april. ”Vores udgangspunkt er lokalt, men vi rækker ud mod de mange tilsvarende initiativer, der findes i vores region, nationalt og internationalt, hvoraf flere er med på konferencen”
+”- Med den ny forening bringer vi kampen for et bæredygtigt København til et nyt positivt niveau. Vi er imod Lynetteholm, fordi vi er FOR demokrati og borgerinddragelse og transparens i de politiske beslutningsprocesser om byens udvikling og dens natur og miljø”, siger Kim Hjerrild, der er talsperson, når foreningen bliver lanceret på konferencen [Fremtidens Øresund](/viden/2022-03-25-konference-en-maritim-naturnationalpark-pa-vej), som afholdes på Christiansborg den 30. april. ”Vores udgangspunkt er lokalt, men vi rækker ud mod de mange tilsvarende initiativer, der findes i vores region, nationalt og internationalt, hvoraf flere er med på konferencen”
 
 Det første arrangement herefter bliver ”Naturens Dag” d. 5. juni, hvor vi sammen med andre danske og svenske organisationer vil sætte fokus på havmiljøet i Øresund. I den nærmeste fremtid er vi klar med en opfordring til medlemskab og med en invitation til at deltage i de forskellige aktiviteter, som foreningen vil gennemføre.
 
 Foreningens bestyrelse består af: Nicholas Woolhead, formand og stud. scient. pol.; John Andersen, professor; Kim Benzon, sekretariatsleder; Kathrine Hammerich, lektor; Per Henriksen, arkitekt og tidl. miljøpolitisk rådgiver; Lone Johnsen, strategisk rådgiver og Kim Hjerrild, tidl. MB, programleder.
 
 Kontakt vedr. foreningen rettes til Kim Hjerrild, tlf 6037 7221. Spørgsmål vedr. konferencen d. 30.4. rettes til Lone Johnsen, tlf. 2211 2740.
+
+[Bliv medlem](/bliv-medlem/?classes=button)
